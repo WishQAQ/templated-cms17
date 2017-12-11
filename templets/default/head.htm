@@ -1,0 +1,46 @@
+﻿
+<div class="header">
+  <div class="header_content">
+   <div style="float: left;"><a href="/">
+    <img src="/images/jinronglogo.png" width="360">
+    </a></div>
+<div style="float: left;    margin: 0 0 0 150px;"><img src="http://xhsp.cnme.net.cn/skin/default/images/logo.jpg" alt="新华（大庆）商品交易所"></div>
+    <script type="text/javascript">
+$(function(){
+	
+    $("#kinMaxShow").kinMaxShow({
+	//设置焦点图高度(单位:像素) 必须设置 否则使用默认值 500    
+        height:400,
+	//设置焦点图 按钮效果
+        button:{
+	    //设置焦点图切换方式为mouseover 鼠标经过按钮切换图片, 默认为 click， 可选 click[鼠标点击切换]或mouseover[鼠标滑过切换]        
+            switchEvent:'mouseover',
+	    //设置显示 索引数字  true 显示， 默认为 false 不显示            
+            showIndex:true,
+            //按钮常规下 样式设置 ，css写法，类似jQuery的 $('xxx').css({key:value,……})中css写法。            
+            //【友情提示：可以设置透明度哦 不用区分浏览器 统一为 opacity，CSS3属性也支持哦 如：设置按钮圆角、投影等，只不过IE8及以下不支持】            
+            normal:{width:'14px',height:'14px',lineHeight:'14px',bottom:'8px',fontSize:'12px',opacity:0.8,background:"url('/statics/images/indexbydisplay002_p_054.png') 14px 0px",border:"none",color:"#656565",marginRight:'6px'},
+            //当前焦点图按钮样式 设置，写法同上            
+            focus:{background:"url('/statics/images/indexbydisplay002_p_054.png') no-repeat", border:"none",color:"#DA6F13",right:'10px'}
+            }			
+    });
+
+});
+</script>
+
+  </div>
+      <div class="navigation">
+      <ul class="main_navi">
+        <li> <a class="navi navi_01" href="/">首页</a> </li>
+        {dede:channelartlist typeid='top' row='8'}
+        <li> <a id="li0{dede:global name=itemindex runphp='yes'}@me=@me+1;{/dede:global}" class="navi navi_0{dede:global name=itemindex runphp='yes'}@me=@me+1;{/dede:global} " href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+          <ul id="ul0{dede:global name=itemindex runphp='yes'}@me=@me+1;{/dede:global}" class="sv sed_navi_0{dede:global name=itemindex runphp='yes'}@me=@me+1;{/dede:global}  hide">
+            {dede:channel type='son' noself='yes'}
+            <li> <a href="[field:typelink/]">[field:typename/]</a> </li>
+            {/dede:channel}
+          </ul>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+    </div>
+</div>

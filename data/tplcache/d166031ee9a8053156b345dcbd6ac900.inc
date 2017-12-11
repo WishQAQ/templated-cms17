@@ -1,0 +1,1 @@
+<li>[field:textlink/]<span class="t_timer">([field:pubdate function=MyDate('m-d',@me)/])</span></li>

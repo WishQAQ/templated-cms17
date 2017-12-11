@@ -1,0 +1,1 @@
+INSERT INTO `dede_addon18` VALUES('7','25','','','127.0.0.1','http://www.baidu.com');

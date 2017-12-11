@@ -1,0 +1,67 @@
+﻿<!-- 页面头部 -->
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}"/>
+ <head>
+  <!-- SEO优化 -->
+  <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+  <!-- CSS和JS导入区 -->
+  <link href="/statics/css/main.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/news.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/master.css" type="text/css" rel="stylesheet" media="all" />
+  <link href="/statics/css/index.visithtml.css" type="text/css" rel="stylesheet" media="all" />
+  <script src="/statics/js/jquery.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="/statics/js/jquery.kinmaxshow-1.0.min.js" type="text/javascript"></script>
+  <script src="/statics/js/common.js" type="text/javascript"></script>
+ </head>
+ <body>
+ {dede:include filename="head.htm"/} 
+<div class="flashimg">
+<a href='#' title='下载中心' target='_parent'><img src='/statics/images/service.jpg' width= height= border=0></a>
+</div>
+
+   <div class="contentmain">
+ <div class="contentmaincontent">
+  <div class="contentmaincontentleft">
+  <div class="divtitle"><font>尊贵服务</font></div>
+  <div class="sdmenu" id="my_menu" style="float: left">
+      <div>
+      {dede:channel type='sun' currentstyle="<a class='divxz' href='~typelink~' ~rel~>~typename~</a>"}
+      <a href='[field:typelink/]'>[field:typename/]</a>
+      {/dede:channel}
+      </div>
+      <div class="sdhinght"></div>
+      <div class="sdimg">
+        <h3>快速通道<font>FAST TRACK</font></h3>
+      </div>
+      <div class="sdimg">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.qq/}&site=qq&menu=yes">
+<img border="0" src="/statics/images/zxzx.jpg" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+        </a>
+      </div>
+  </div>
+  
+  </div>
+  <div class="contentmaincontentright">
+   <div class="contentmaincontenttitle"><h3>下载中心<font>/Serivce</font></h3></div>
+   <div class="contentmaincontentwenzi">
+      <div class="downlist" id="cc01">
+          <div id="faq1">
+     {dede:list pagesize='20' titlelen='40'}
+    <p><b>[field:title/]</b><em><a target="_blank" title="请右击目标另存为" href="[field:upload/]">下载</a></em></p>
+     {/dede:list}
+ 
+         </div>
+        </div>
+   
+   </div>
+   </div>
+ </div>
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

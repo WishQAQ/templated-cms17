@@ -1,0 +1,244 @@
+﻿
+.n1 {
+	border: none;
+	cursor: default;
+	width: 270px;
+	height: 26px;
+	line-height: 26px;
+	vertical-align: middle;
+	padding-left: 5px;
+	background: url("../images/indexbydisplay002_p_053.png") no-repeat left transparent;
+	color: red;
+}
+/*.ss { 
+color: #FFFFFF; 
+background: #0A246A; 
+} */
+.ss {
+	color: #FFFFFF;
+	background: #efefef;
+}
+table {
+	font-size: 10pt;
+}
+.maincontent {
+    width: 1190px;
+    margin: 25px auto;
+}
+.maincontent .maincontentup {
+	width: 1190px;
+	height: 216px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 10px;
+}
+.maincontent .maincontentup .maincontentup2 {
+    width: 380px;
+    height: 216px;
+    float: left;
+    margin-right: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.maincontent .maincontentup .maincontentup2marginno {
+	margin-right: 0px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2a {
+	width: 380px;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px dotted #333;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2a a {
+	font-size: 15px;
+	font-family: 微软雅黑, 宋体;
+	font-weight: 800;
+	color: #ff3300;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2a font {
+	font-size: 13px;
+	font-family: 微软雅黑, 宋体;
+	font-weight: 800;
+	color: #D2A3A3;
+}
+
+.maincontent .maincontentup .maincontentup2 .maincontentup2b {
+	width: 380px;
+	height: 182px;
+	padding-top: 10px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b1 {
+	width: 105px;
+	height: 182px;
+	float: left;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b1 img {
+	width: 95px;
+	height: 80px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 {
+	width: 190px;
+	height: 112px;
+	float: left;
+	position: relative;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 a {
+	font-size: 14px;
+	color: #333;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 a:hover {
+	font-size: 14px;
+	color: #ff0000;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 span {
+	background: url("../images/indexbydisplay002_j_057.jpg") no-repeat scroll 0px 6px transparent;
+	height: 20px;
+	line-height: 20px;
+	width: 30px;
+	margin-left: 60px;
+	padding-left: 15px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 span a {
+	font-size: 15px;
+	color: #ff6600;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 span a:hover {
+	font-size: 15px;
+	color: #ff3300;
+	text-decoration: underline;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b2 font {
+	font-size: 12px;
+	color: #777;
+	height: 18px;
+	line-height: 18px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 {
+	width: 380px;
+	height: 112px;
+	padding: 0;
+	margin: 0;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 ul {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 ul li {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	list-style: none outside none;
+	height: 22px;
+	line-height: 22px;
+	background: url(../images/indexbydisplay002_p_048.png) no-repeat left;
+	overflow: hidden;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 ul li a {
+	font-size: 12px;
+	color: #777;
+	padding-left: 15px;
+	float: left;
+	width: 200px;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 ul li a:hover {
+	font-size: 12px;
+	color: #ff3300;
+	padding-left: 15px;
+	float: left;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 ul li span {
+	font-size: 12px;
+	color: #777777;
+	padding-left: 15px;
+	float: right;
+	height: 22px;
+	line-height: 22px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 font {
+	background: url("../images/indexbydisplay002_j_057.jpg") no-repeat scroll 0px 6px transparent;
+	margin-right: 5px;
+	height: 20px;
+	line-height: 20px;
+	width: 30px;
+	padding-left: 15px;
+	display: block;
+	float: right;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 font a {
+	font-size: 15px;
+	color: #ff6600;
+	cursor: pointer;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b3 font a:hover {
+	font-size: 15px;
+	color: #ff3300;
+	text-decoration: underline;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b4 {
+	width: 380px;
+	height: 112px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b4 ul li {
+	list-style: none outside none;
+	height: 48px;
+	line-height: 48px;
+	padding-bottom: 10px;
+}
+.maincontent .maincontentup .maincontentup2 .maincontentup2b .maincontentup2b4 ul li a img {
+	width: 380px;
+}
+.maincontent .maincontentdown {
+	height: 98px;
+	width: 960px;
+	clear: both;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+}
+.maincontent .maincontentdown .imagelink_a {
+	background: url("../images/indexbydisplay002_j_070.jpg") no-repeat scroll 0px 0px transparent;
+	float: left;
+	vertical-align: middle;
+	height: 98px;
+	line-height: 98px;
+	overflow: hidden;
+	text-align: left;
+	text-indent: 20px;
+	width: 55px;
+}
+.maincontent .maincontentdown .imagelink_a h3 {
+	color: #666;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	font-weight: 800;
+}
+.maincontent .maincontentdown .imagelink_b {
+	float: left;
+	height: 98px;
+	margin-right: 24px;
+	padding-top: 6px;
+	cursor: pointer;
+}
+.maincontent .maincontentdown .imagelink_c {
+	float: left;
+	margin-right: 10px;
+	width: 200px;
+}
+.maincontent .maincontentdown .imagelink_c h3 {
+	font-size: 14px;
+	font-weight: 800;
+	color: #777;
+}

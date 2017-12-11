@@ -1,0 +1,26 @@
+﻿<div class="footer">
+  <div class="footer_content">
+    <ul>
+      {dede:channelartlist typeid='top' row='8'}
+      <li>
+        <h5> <a rel="nofollow" href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a> </h5>
+        <dl>
+          {dede:channel type='son' noself='yes'}
+          <dd> <a rel="nofollow" href="[field:typelink/]">[field:typename/]</a> </dd>
+          {/dede:channel}
+        </dl>
+      </li>
+      {/dede:channelartlist}
+    </ul>
+    <div class="contact"> <a rel="nofollow" href=""><span class="en">{dede:global.dianhua/}</span><br>
+      全国服务热线</a> <a style="display:block;padding-top:20px;" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.qq/}&site=qq&menu=yes" target="_blank" rel="nofollow"> <img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:18581133:47"> </a> </div>
+  </div>
+</div>
+<div class="copyright">
+  <div class="copyright_content"> <span class="cr">{dede:global.cfg_powerby/}</span> </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    wrap_index();
+});
+</script>

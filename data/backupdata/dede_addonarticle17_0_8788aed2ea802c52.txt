@@ -1,0 +1,1 @@
+INSERT INTO `dede_addonarticle17` VALUES('5','23','','','','127.0.0.1','/uploads/soft/140904/1-140Z4145056.doc');

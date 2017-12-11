@@ -1,0 +1,246 @@
+﻿
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 170%;
+	word-break: break-all;
+	color: #404040;
+}
+div {
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+}
+div, form, img, ul, ol, li, p, span, dd, dl, dt, s, b {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul, li, ol {
+	list-style: none;
+}
+select, input, textarea {
+	font-size: 12px;
+	line-height: 1.6em;
+}
+select {
+	color: #404040;
+}
+table.tab_yy {
+	width: 676px;
+	border-collapse: collapse;
+	border-style: none;
+}
+table.tab_yy th {
+	text-align: right;
+	font-weight: 700;
+	padding: 6px;
+	line-height: 30px;
+	width: 2%;
+}
+table.tab_yy td {
+	text-align: left;
+	background: url(../images/2_4line.gif) repeat-x 0 bottom;
+	padding: 6px;
+	line-height: 30px;
+	width: 5%;
+}
+table.tab_yy td input {
+	vertical-align: middle;
+}
+table.tab_yy td .input {
+	border: 1px solid #e5e5e5;
+	padding: 2px 4px;
+	height: 22px;
+	width: 350px;
+}
+table.tab_yy td .textarea {
+	border: 1px solid #e5e5e5;
+	width: 358px;
+	overflow: hidden;
+}
+table.tab_yy td .button_tj {
+	background: url(../images/btton_tj.jpg);
+	width: 92px;
+	height: 26px;
+	cursor: pointer;
+	border: none;
+}
+table.tab_yy td .button_cz {
+	background: url(../images/btton_cz.jpg);
+	width: 92px;
+	height: 26px;
+	cursor: pointer;
+	border: none;
+}
+.zyts {
+	width: 700px;
+	height: 560px;
+	background: #FFF;
+	left: 0;
+	top: 0;
+}
+.zyts h3 {
+	text-align: center;
+	padding: 22px;
+}
+.zyts .tsbox {
+	border: 1px solid #E4E4E4;
+	padding: 20px;
+	margin: 0 0 0 40px;
+	text-indent: 30px;
+	font-size: 14px;
+	line-height: 180%;
+}
+.zyts .send {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+.zyts .send a {
+	margin: 0 5px;
+	cursor: pointer;
+}
+.downlist {
+	margin: 0 20px;
+	padding: 20px 0 50px 0
+}
+.downlist p {
+	height: 34px;
+	line-height: 32px;
+	background: url(../images/2_4line.gif) repeat-x 0 bottom
+}
+.downlist p em {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	width: 82px;
+	padding-right: 8px;
+	float: right;
+	font-style: normal;
+	background: url(../images/down.gif) no-repeat 0 7px;
+	padding-left: 20px;
+}
+.downlist p b {
+	float: left;
+	display: block;
+	background: url(../images/ico_news.jpg) no-repeat 5px center;
+	text-indent: 25px;
+	font-weight: normal
+}
+.con_R {
+	margin: 0 0 0 0px;
+	background: #FFF;
+	width: 770px;
+	_margin-right: 5px;
+*margin-right:5px
+}
+.u_site {
+	background: url(../images/siteico.jpg) no-repeat 10px center;
+	line-height: 40px;
+	text-indent: 30px;
+	display: block;
+}
+.con_bg {
+	border: 1px solid #e5e1d2;
+	border-top: none;
+	background: #FFF
+}
+.allfontpage {
+	margin: 0px 30px;
+	padding: 30px 0px 60px 0px;
+	font-size: 13px;
+	line-height: 210%;
+	overflow: hidden
+}
+.pr_tab {
+	margin: 0 20px;
+	border-bottom: 1px solid #e96606;
+	height: 26px;
+	line-height: 26px;
+	padding-top: 15px;
+}
+.pr_tab li {
+	width: 114px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	font-size: 12px
+}
+.pr_tab .sd01 {
+	color: #fff;
+	background: url(../images/pr_title_hover.gif) no-repeat center bottom;
+}
+.pr_tab .sd02 {
+	background: url(../images/title_bg.gif) no-repeat center bottom;
+	color: #815600
+}
+.pr_Overview {
+	margin: 0 20px;
+	padding: 15px 0 20px 0
+}
+table.tab_view {
+	width: 698px;
+	border-collapse: collapse;
+	border-style: none;
+	background: #f6f5f3
+}
+table.tab_view th {
+	background: #e4e1d9;
+	border-right: 1px solid #FFF;
+	height: 24px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 15px;
+	border-bottom: 1px solid #FFF;
+	padding: 3px 10px
+}
+table.tab_view td {
+	border-right: 1px solid #FFF;
+	height: 24px;
+	line-height: 24px;
+	padding: 3px 10px;
+	border-bottom: 1px solid #FFF
+}
+table.tab_view .even td {
+	border-right: 1px solid #fff;
+	background: #e1ded4
+}/*移上色*/
+table.tab_view .old {
+	border-right: 1px solid #fff;
+	background: #f0eeea
+}/*隔行底色*/
+.FAQ {
+	margin: 0 20PX;
+	padding: 20px 10px 40px 10px
+}
+#faq1 dl, #faq2 dl, #faq3 li, #faq4 dl {
+	display: block
+}
+#faq1 dt, #faq2 dt, #faq3 dt, #faq4 dt {
+	cursor: pointer;
+	background: url(../images/2_4line.gif) repeat-x 0 top;
+	line-height: 32px;
+	font-weight: normal;
+	line-height: 22px;
+}
+#faq1 dt:hover, #faq2 dt:hover, #faq3 dt:hover, #faq4 dt:hover {
+	background: #F0F0F0
+}
+#faq1 dt em, #faq2 dt em, #faq3 dt em, #faq4 dt em {
+	background: url(../images/q.gif) no-repeat 0 5px;
+	padding-left: 15px;
+	font-style: normal;
+	margin-right: 8px;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 30px;
+	color: #ff6400
+}
+#faq1 dd, #faq2 dd, #faq3 dd, #faq4 dd {
+	display: none;
+	border: 1px solid #ffd0b2;
+	padding: 10px;
+}

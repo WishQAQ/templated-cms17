@@ -1,0 +1,1 @@
+document.write("<a href=\'#\' title=\'财富金融\' target=\'_blank\'><img src=\'/d/file/p/2013-09-17/5d8dba193d861fa0a371c1bde1c4d968.jpg\' width= height= border=0></a>");

@@ -1,0 +1,161 @@
+﻿<!-- 页面头部 -->
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}"/>
+ <head>
+  <!-- SEO优化 -->
+  <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+  <!-- CSS和JS导入区 -->
+  <link href="/statics/css/main.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/news.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/master.css" type="text/css" rel="stylesheet" media="all" />
+  <link href="/statics/css/index.visithtml.css" type="text/css" rel="stylesheet" media="all" />
+  <script src="/statics/js/jquery.js" type="text/javascript"></script>
+  <script src="/statics/js/index.js" type="text/javascript"></script>
+  <script src="/statics/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="/statics/js/jquery.kinmaxshow-1.0.min.js" type="text/javascript"></script>
+  <script src="/statics/js/common.js" type="text/javascript"></script>
+ </head>
+ <body>
+{dede:include filename="head.htm"/}
+ <div class="flashimg">
+<a href='#' title='网上预约' target='_parent'><img src='/statics/images/apply.jpg' width= height= border=0></a>
+</div>
+
+   <div class="contentmain">
+ <div class="contentmaincontent">
+  <div class="contentmaincontentleft">
+  <div class="divtitle"><font>网上预约</font></div>
+  <div class="sdmenu" id="my_menu" style="float: left">
+      <div>
+      {dede:channel type='sun' currentstyle="<a class='divxz' href='~typelink~' ~rel~>~typename~</a>"}
+      <a href='[field:typelink/]'>[field:typename/]</a>
+      {/dede:channel}
+      </div>
+      <div class="sdhinght"></div>
+      <div class="sdimg">
+        <h3>快速通道<font>FAST TRACK</font></h3>
+      </div>
+      <div class="sdimg">
+         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.qq/}&site=qq&menu=yes">
+<img border="0" src="/statics/images/zxzx.jpg" alt="点击这里给我发消息" title="点击这里给我发消息"/>
+        </a>
+      </div>
+  </div>
+  
+  </div>
+
+<div class="contentmaincontentright">
+   <div class="contentmaincontenttitle"><h3>{dede:field name='typename'/}<font>/Online</font></h3></div>
+   <div class="contentmaincontentwenzi">
+             
+           <div id="box" class="zyts">
+             <h3><img alt="重要提示" src="/statics/images/zyts.jpg"></h3>
+             <div class="tsbox"><p>&nbsp;</p>
+<p>
+</p><p>证券投资具有一定风险，根据《中华人民共和国信托法》、《信托公司集合资金信托计划管理办法》及其他相关法律法规的有关规定，参与信托计划的人士应为风险识别、评估、承受能力较强的合格投资者。请确认您或您所代表的机构是一名“合格投资者”，并将遵守适用的有关法规。</p>
+<p>本网站所载的各种信息和数据等仅供参考，并不构成销售要约，或买入任何证券、基金或其它投资工具的建议。投资者应仔细审阅相关金融产品的合同文件等以了解其风险因素，或寻求专业的投资顾问的建议。信托计划不承诺保本和最低收益，具有一定的投资风险。投资者的本金可能会因市场变动而蒙受损失，请投资者充分认识投资风险，谨慎投资。</p>
+<p>钻石财富集团作为信托计划的投资顾问，其过往业绩不代表该信托产品未来运作的实际效果。投资者不应依赖本网站所提供的数据做出投资决策，否则由投资者自行承担所有风险。</p>
+<p></p>
+<p>&nbsp;</p></div>
+<div class="send"><a onclick="document.getElementById('box').style.display='none';document.getElementById('online').style.display='block';" ><img src="/statics/images/tongyi.jpg"></a> <a href=""><img src="/statics/images/butongyi.jpg"></a></div>
+          </div>
+
+          <div id="online" class="online" style="display:none;">
+          <SCRIPT language=JavaScript>
+function xxg()
+{
+  if (form1.lxr.value=="")
+   { 
+	alert("您没有填联系人");
+	document.form1.lxr.focus();
+	return false;
+	 }
+  if (form1.tel.value=="")
+   { 
+	alert("您没有填联系电话");
+	document.form1.tel.focus();
+	return false;
+	 }
+  if (form1.hometel.value.length<7 || form1.hometel.value.length>13)
+   { 
+	alert("联系电话格式不正确");
+	document.form1.tel.focus();
+	return false;
+	 }
+ if (form1.email.value="")
+   { 
+	alert("您没有填写邮箱");
+	document.form1.email.focus();
+	return false;
+	 }
+
+return true;
+  }
+</script>
+		   <form id="form1" name="form1"   action="/plus/diy.php" enctype="multipart/form-data" method="post" onSubmit="return xxg();initAd();submitonce(this);">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+             <table class="tab_yy">
+  <tbody>
+  <tr>
+    <th>联系人：</th>
+    <td><input type="text" class="input" value=""  name='lxr' id='lxr'>&nbsp;<span class="red">*（必填）</span></td>
+  </tr>
+  <tr>
+    <th>联系电话：</th>
+    <td><input type="text" class="input" value=""  name='tel' id='tel'>&nbsp;<span class="red">*（必填）</span></td>
+  </tr>
+  
+  <tr>
+    <th>联系传真：</th>
+    <td><input type="text" class="input" value=""  name='fax' id='fax'></td>
+  </tr>
+  <tr>
+    <th>电子邮箱：</th>
+    <td><input type="text" class="input" value=""  name='email' id='email'>&nbsp;<span class="red">*（必填）</span></td>
+  </tr>
+  <tr>
+    <th>公司名称：</th>
+    <td><input type="text" class="input" value=""   name='com' id='com'></td>
+  </tr>
+  <tr>
+    <th>联系地址：</th>
+    <td><input type="text" class="input" value=""  name='dizhi' id='dizhi'></td>
+  </tr>
+  
+  <tr>
+    <th>预约说明：</th>
+    <td><textarea class="textarea" rows="5" cols="" name='content' id='content'></textarea></td>
+  </tr>
+  
+  <input type='hidden' name='mytime' id='mytime' value='' />
+
+  <tr>
+    <th>&nbsp;</th>
+<input type="hidden" name="dede_fields" value="lxr,text;tel,text;fax,text;email,text;com,text;dizhi,text;content,multitext;mytime,text" />
+<input type="hidden" name="dede_fieldshash" value="4087b7e5fc2a2b7ce5c7df063f140a89" />
+    <td><input type="submit" class="button_tj" value="" id="button" name="submit"> <input type="reset" class="button_cz" value="" name="reset"></td>
+  </tr>
+             </tbody></table>
+</form>
+           </div>
+<script type="text/javascript">
+	window.onload = function(){
+	var nowDate = new Date();
+	var str = nowDate.getFullYear()+"-"+(nowDate.getMonth() + 1)+"-"+nowDate.getDate()+" "+nowDate.getHours()+":"+nowDate.getMinutes()+":"+nowDate.getSeconds();
+	document.getElementById("mytime").value=str;
+	}
+</script>
+
+
+     </div>
+   </div>
+ </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

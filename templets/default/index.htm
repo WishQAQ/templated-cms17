@@ -1,0 +1,221 @@
+﻿<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="author" content="design by cooltea521" />
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<!-- SEO优化 -->
+<title>{dede:global.cfg_webname/}</title>
+<!-- CSS和JS导入区 -->
+<link href="/statics/css/main.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all" />
+<link href="/statics/css/index.visithtml.css" type="text/css" rel="stylesheet" media="all" />
+<script src="/statics/js/jquery.js" type="text/javascript"></script>
+<script src="/statics/js/index.js" type="text/javascript"></script>
+<script src="/statics/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/statics/js/jquery.kinmaxshow-1.0.min.js" type="text/javascript"></script>
+<script src="/statics/js/common.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="/statics/js/side_ad.js"></script> -->
+<script type="text/javascript" src="/statics/js/news.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="flash">
+  <div id="show">
+    <div id="kinMaxShow">
+      <div><a href='#' title='焦点图一' target='_blank'><img src='/statics/images/banner1.jpg' width= height= border=0></a></div>
+      <div><a href='#' title='焦点图二' target='_blank'><img src='/statics/images/banner2.jpg' width= height= border=0></a></div>
+      <div><a href='#' title='焦点图三' target='_blank'><img src='/statics/images/banner3.jpg' width= height= border=0></a></div>
+      <div><a href='#' title='焦点图四' target='_blank'><img src='/statics/images/banner4.jpg' width= height= border=0></a></div>
+    </div>
+    <div  style="position:relative; width: 100%; z-index: 1;   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);; height:32px; bottom:0px; margin-top:-32px;"></div>
+  </div>
+</div>
+<!--通告区域*/-->
+<div class="tonggao">
+  <div class="t_title">官方最新通告</div>
+  <div class="t_content " id="scroll">
+  <ul>
+        
+        {dede:arclist row='5' titlelen='100' orderby='pubdate' typeid='20' idlist='' channelid='1'}
+        <li>[field:textlink/]<span class="t_timer">([field:pubdate function=MyDate('m-d',@me)/])</span></li>
+        {/dede:arclist}
+        
+  </ul>
+  </div>
+  <div class="t_more"><a href="">更多>></a></div>
+</div>
+<script>
+ function scroll(){
+ $(".t_content ul").animate({"margin-top":"-60px"},function(){
+   $(".t_content ul li:eq(0)").appendTo($(".t_content ul"))
+   $(".t_content ul").css({"margin-top":0})
+ })
+ }
+  setInterval(scroll,3000)
+</script>
+<!--/*通过结束*/-->
+
+<div class="s_content">
+<div class="s_c_left">
+
+<div class="s_u_title">
+    快捷通道
+</div>
+
+<div class="s_u_content">
+    <div class="s_u_list"><a href="http://mgr.cnme.net.cn/memberweb/frontweb/openaccount/index/233.html"><i class="icon-user"></i>  &nbsp;网上开户</a></div>
+    <div class="s_u_list"><a href="/service/fwnr/"><i class="icon-heart"></i>  &nbsp;开户流程</a></div>
+    <div class="s_u_list"><a href="/apply/"><i class="icon-cloud-download"></i>  &nbsp;软件下载</a></div>
+    <div class="s_u_list"><a href="/service/yinshangbangding/"><i class=" icon-credit-card"></i>  &nbsp;银商绑定</a></div>
+</div>
+</div>
+  
+<div class="s_c_center"><div class="focus">
+  <ul>
+    {dede:arclist row='6' titlelen='24' orderby='pubdate' typeid='3' idlist='' type='image.' imgwidth='300' imgheight='250'}
+      <li class="clearfix">
+        <div class="imgBox">[field:imglink/]</div>
+        <h5>[field:title/]</h5>
+        <p>[field:info/]<p>
+      </li>
+    {/dede:arclist}
+  </ul>
+</div>
+</div>
+
+<div class="s_c_right">
+
+      <div class="s_c_r_title"><a>推荐消息</a>&nbsp;<font>INFO</font></div>
+      <div class="s_c_r_content">
+        <div class="s_c_r_list">
+          <ul>
+            {dede:arclist typeid=3 row=7 titlelen=30 orderby='pubdate' idlist='' type='commend.'}
+            <li><a href='[field:arcurl/]'>[field:title/]</a><span>[field:pubdate function=MyDate('Y-m-d',@me)/]</span></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="maincontent">
+  <div class="maincontentup">
+    <div class="maincontentup2">
+      <div class="maincontentup2a"><a>行业资讯</a>&nbsp;<font>NEWS</font></div>
+      <div class="maincontentup2b">
+        <div class="maincontentup2b3">
+          <ul>
+            {dede:arclist typeid=19 row=8 titlelen=45 orderby='pubdate' }
+            <li><a href='[field:arcurl/]'>[field:title/]</a><span>[field:pubdate function=MyDate('Y-m-d',@me)/]</span></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="maincontentup2">
+      <div class="maincontentup2a"><a>财经资讯</a>&nbsp;<font>FINANCE</font></div>
+      <div class="maincontentup2b">
+        <div class="maincontentup2b3">
+          <ul>
+            {dede:arclist typeid=24 row=8 titlelen=45 orderby='pubdate' }
+            <li><a href='[field:arcurl/]'>[field:title/]</a><span>[field:pubdate function=MyDate('Y-m-d',@me)/]</span></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+    </div>
+    </div>
+    <div class="maincontentup2" style="margin: 0;">
+      <div class="maincontentup2a"><a>分析策略</a>&nbsp;<font>ANALYSIS</font></div>
+      <div class="maincontentup2b">
+        <div class="maincontentup2b3">
+          <ul>
+            {dede:arclist typeid=18 row=8 titlelen=45 orderby='pubdate' }
+            <li><a href='[field:arcurl/]'>[field:title/]</a><span>[field:pubdate function=MyDate('Y-m-d',@me)/]</span></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="height:15px; clear:both;"></div>
+    </div>
+  </div>
+  <div class="K_left">
+  <div class="gp">
+<!--nav -->
+<table border="0" cellspacing="0" cellpadding="0" class="righttag">
+<tbody><tr>
+<td class="tagf" id="tagname1" onmouseover="SwitchNewsTags('nowhot',1)">
+<b>
+原油</b></td>
+<td class="tagn" id="tagname2" onmouseover="SwitchNewsTags('nowhot',2)">
+<b>
+美元</b></td>
+<td class="tagn" id="tagname3" onmouseover="SwitchNewsTags('nowhot',3)">
+<b>黄金</b></td>
+</tr>
+</tbody></table>
+<!--nav end -->
+<div class="gpcont">
+<!--原油 -->
+<div id="nowhot1" class="k_pic">
+
+
+<img src="http://photo.zhijinwang.com/CN/live_charts/crudeOil.gif" border="0" width="630" height="400" id="price6" alt="石油价格走势图">
+
+</div>
+<!--原油end -->
+<!--美元 -->
+<div id="nowhot2" class="k_pic" style="display: none;">
+
+<img src="http://photo.zhijinwang.com/CN/live_charts/usdx.gif" border="0" width="630" height="400" id="price5" alt="美元指数走势图">
+
+</div>
+<!--美元end -->
+<!--纸黄金 -->
+<div id="nowhot3" class="k_pic" style="display: none;">
+
+<img src="http://photo.zhijinwang.com/cn/live_charts/goldcny.gif" border="0" width="630" height="400" id="price1" alt="纸黄金价格走势图">
+
+</div>
+<!--纸黄金end -->
+</div>
+
+<script type="text/javascript">
+  
+  function SwitchNewsTags(nowhot,VaL){
+    $(".tagf").attr('class','tagn');
+
+    $("#tagname"+VaL).attr('class','tagf');
+
+    $('.k_pic').hide();
+
+    $('#'+nowhot+VaL).show();
+
+  }
+</script>
+</div>
+</div>
+<div class="K_right">
+<div class="s_c_r_title">全球指数行情</div>
+<div class="k_r_pic">  <img src="http://photo.zhijinwang.com/cn/live_charts/sohu_index_table.gif" border="0" width="300" alt="全球指数行情">
+</div>
+
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
